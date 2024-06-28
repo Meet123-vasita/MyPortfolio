@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Vasita - Web Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <header>
+        <div class="logo">
+            <h1>Meet Vasita</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                ☰
+            </button>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi,<br>I'm <span>Meet Vasita</span></h1>
+                <div class="title_main">
+                <p class="title_text"><span id="designation"></span></p>
+                </div>
+                <button onclick="window.location.href = 'contactme.html';">Contact</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/meet.jpg" alt="Meet Vasita">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/meet1.jpg" alt="About Me">
+                </div>
+                <div class="about-text">
+                    <h1 class="abt_me">About Me</h1>
+                    <p>I am Meet Vasita,<br>
+                        <br>a passionate web designer based in Ulhasnagar. I specialize in creating beautiful and
+                        functional websites.
+                    </p>
+                    <br>
+                    <p>My goal is to deliver high-quality designs that enhance user experience and bring ideas to life.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-image">
+                        <img src="assets/html.png" alt="html">
+                    </div>
+                    <h2>HTML</h2>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 85%;"></div>
+                    </div>
+                    <div class="skill-percentage">85%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-image">
+                        <img src="assets/css.png" alt="css">
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill-percentage">70%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-image">
+                        <img src="assets/javascript.png" alt="javascript">
+                    </div>
+                    <h2>JavaScript</h2>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 45%;"></div>
+                    </div>
+                    <div class="skill-percentage">45%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-image">
+                        <img src="/assets/python.png" alt="python">
+                    </div>
+                    <h2>Python</h2>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 30%;"></div>
+                    </div>
+                    <div class="skill-percentage">30%</div>
+                </div>
+                <div class="skill">
+                    <div class="skill-image">
+                        <img src="assets/java.png" alt="java">
+                    </div>
+                    <h2>Java</h2>
+                    <div class="skill-level">
+                        <div class="skill-level-inner" style="width: 60%;"></div>
+                    </div>
+                    <div class="skill-percentage">60%</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h1>Education</h1>
+            <div class="education-item">
+                <div class="education-content">
+                    <div class="education-image">
+                        <img src="assets/college1.jpg" alt="Nesp">
+                    </div>
+                    <div class="education-text">
+                        <h2>Diploma in Computer Engineering</h2>
+                        <p>Navjeevan Education Society's Polytechnic - Bhandup</p>
+                        <br>
+                        <p>2019 - 2022</p>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="education-image">
+                        <img src="assets/college2.png" alt="KGCE">
+                    </div>
+                    <div class="education-text">
+                        <h2>Bachelor in Information Technology</h2>
+                        <p>Konkan Gyanpeeth College of Engineering - Karjat</p>
+                        <br>
+                        <p>2022 - pursuing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h1>Contact</h1>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Meet123-vasita" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/meet___vasita" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="social-text">
+            <p>Follow me on GitHub and Instagram</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
